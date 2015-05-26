@@ -19,11 +19,6 @@ public class MondayWeek2Task1 {
 		System.out.println(brojac);	
 		}
 		
-			
-		
-		
-		
-		
 	}
 
 
