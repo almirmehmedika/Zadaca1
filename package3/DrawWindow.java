@@ -26,7 +26,7 @@ public class DrawWindow extends JFrame {
 		};
 		
 		add(imgPanel);
-		setSize(800, 600);
+		setSize(950, 550);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setLocationRelativeTo(null);
 		setTitle("JAVA Drawing");
