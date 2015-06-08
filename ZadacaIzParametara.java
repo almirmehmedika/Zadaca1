@@ -2,6 +2,7 @@
 public class ZadacaIzParametara {
 
 	public static void main(String[] args) {
+		
 		System.out.println(squareNumber(3));
 		System.out.println(squareDoubleNumber(3.2));
 		System.out.println(productTwoNumber(3 , 4));
@@ -18,5 +19,7 @@ public class ZadacaIzParametara {
 	}
 	public static double productTwoDoubleNumber(double a, double b){
 		return a*b;
+
 	}
+
 }

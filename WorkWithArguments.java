@@ -1,7 +1,7 @@
+
 public class WorkWithArguments {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		double[] array = new double[args.length];
 		if (args.length == 0) {
 			System.out.println("Moras unijeti makar jedan parametar");
@@ -39,6 +39,8 @@ public class WorkWithArguments {
 			product *= array[i];
 		}
 		System.out.printf("Product is: %f", product);
+
+
 	}
 
 }
