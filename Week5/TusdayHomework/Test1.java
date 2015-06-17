@@ -1,21 +1,47 @@
+import java.util.ArrayList;
 
+/**
+ * @author
+ *
+ */
+public class Test
+{
 
+    /**
+     * @param args
+     */
+    public static void main(final String[] args)
+    {
+        final ArrayList<Employee> employees = new ArrayList<Employee>();
 
-public class Test1 {
+        final Employee employeeFirst = new Employee();
+        employeeFirst.setName("Sam");
+        employeeFirst.setGender("M");
+        employeeFirst.setSalary(1200);
+        employees.add(employeeFirst);
 
-	public static void main(String[] args) {
-		Employee e1 = new Employee("Sam", "Man", 1200);
-		Employee e2 = new Employee("Dean", "Man", 1300);
-		Employee e3 = new Employee("Bobby", "Man", 1400);
-		
-		Company c1 = new Company("Javacomp", e3 , new Employee[]{e1,e2});
-		
-		System.out.println(c1.getNumOfEmployees());
-		System.out.println(c1.getNumOfFemaleEmployees());
-		System.out.println(c1.getSalaryBudgetValue());
-		c1.addSalaryIncrease(14);
-		System.out.println(c1.getSalaryBudgetValue());
-		System.out.println(c1);
-	}
+        final Employee employeeSecond = new Employee();
+        employeeSecond.setName("Dean");
+        employeeSecond.setGender("M");
+        employeeSecond.setSalary(1300);
+        employees.add(employeeSecond);
+
+        final Employee director = new Employee();
+        director.setName("Bobby");
+        director.setGender("M");
+        director.setSalary(1400);
+
+        final Company company = new Company();
+        company.setCompanyName("Javacomp");
+        company.setDirector(director);
+        company.setEmployees(employees);
+
+        System.out.println(company.getNumOfEmployees());
+        System.out.println(company.getNumOfFemaleEmployees());
+        System.out.println(company.getSalaryBudgetValue());
+        company.addSalaryIncrease(14);
+        System.out.println(company.getSalaryBudgetValue());
+        System.out.println(company);
+    }
 
 }
